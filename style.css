@@ -1,0 +1,62 @@
+@font-face{
+    font-family: "myFont";
+    src: url("ShadowsIntoLight-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gold;
+    letter-spacing: 5px;
+    color: olivedrab;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "myFont";
+}
+h1{
+    font-family: "myFont";
+    font-size: 80px;
+}
+button{
+    font-family: "myFont";
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: olivedrab;
+    color: gold;
+    font-size: 23px;
+}
+.gameBoard{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    
+}
+
+.currentPlayer,
+.result{
+    font-size: 25px;
+    font-weight: 800;
+}
+.box{
+    text-align: center;
+    align-content: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+.top,
+.middle{
+    border-bottom: 3px solid olivedrab;
+}
+.left,
+.center{
+    border-right: 3px solid olivedrab;
+}
